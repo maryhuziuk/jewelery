@@ -1,0 +1,61 @@
+.hero {
+  max-width: 1600px;
+
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 90px;
+  
+ 
+ 
+
+
+
+
+
+}
+
+.hero-section-one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color:  #EBE9E6;;
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 700px;
+  
+
+    &__tittle {
+  
+    color: var(--primary-text-tittle-color);
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.00em;
+    margin-bottom: 20px;
+
+  }
+  &__text{
+    text-align: center;
+    width: 324px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 24px;
+  
+  }
+
+}
+.image-hero{
+ 
+  width: 218px;
+  height: 243px;
+  display:flex;
+  margin-bottom: 20px;
+
+
+}
+

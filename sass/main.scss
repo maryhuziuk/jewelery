@@ -1,0 +1,34 @@
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/plaseholder';
+
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/common';
+@import './utils/title';
+@import './utils/container';
+
+
+@import './components/header/page-header';
+@import './components/header/logo';
+@import './components/header/site-nav';
+@import './components/header/contacts';
+@import './components/header/modal-menu';
+
+@import './components/hero/hero';
+@import './components/hero/button-hero';
+
+@import './components/section/features';
+@import './components/section/section-portfolio';
+@import './components/section/team';
+@import './components/section/clients';
+
+@import './components/footer/footer';
+@import './components/footer/contacts-footer';
+@import './components/footer/logo-footer';
+@import './components/footer/footer-section';
+
+@import './components/modal-window/modal';
+@import './components/modal-window/backdrop';
+@import './components/modal-window/modal-button';
+

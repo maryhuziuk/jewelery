@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid  #0E0E0E;
+  
+  &-container {
+    @extend %flex-align;
+  }
+}
+.header-portf {
+  // position: absolute;
+  border-bottom: 1px solid #ececec;
+}

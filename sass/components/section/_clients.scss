@@ -1,0 +1,66 @@
+.clients {
+  display: flex;
+  
+  @include desktop-max {
+    flex-wrap: wrap;
+  }
+
+  @include tel {
+    margin: -15px;
+  }
+
+  @include tablet {
+    margin: -15px;
+  }
+
+  &__items {
+    width: 100%;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms var(--timing-functian);
+    @include tel-max{
+      &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+
+    }
+    
+    
+
+
+    @include tel {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @include tablet {
+      width: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
+    }
+    @include desktop {
+      width: calc((100% - 4 * 30px) / 1);
+      margin: 15px;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    @extend %flex-align;
+    justify-content: center;
+    color: #afb1b8;
+    transition: color 250ms var(--timing-functian);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__icons {
+    fill: currentColor;
+  }
+}

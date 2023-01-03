@@ -1,1 +1,1 @@
-# jewelery
+# goit-markup-hw-07

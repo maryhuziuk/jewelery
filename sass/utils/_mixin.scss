@@ -1,0 +1,42 @@
+@mixin tel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tel-max {
+  @media screen and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-max {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-max {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

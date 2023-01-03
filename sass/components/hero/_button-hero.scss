@@ -1,0 +1,29 @@
+.btn-hero {
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px 22px;
+  display: block;
+
+  transition: color 250ms var(--timing-functian),
+    background-color 250ms var(--timing-functian),
+    box-shadow 250ms var(--timing-functian);
+
+  color:var(--background-maintittle-color);;
+  background-color: #0E0E0E;;
+  cursor: pointer;
+ 
+  font-family: inherit;
+ font-weight: 400;
+font-size: 20px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: var(--background-maintittle-color);
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

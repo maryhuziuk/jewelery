@@ -1,0 +1,67 @@
+.section-nopadding {
+  padding-top: 60px;
+
+  @include tablet {
+    padding-top: 60px;
+  }
+  @include desktop {
+    padding-top: 94px;
+  }
+}
+
+.features {
+  text-decoration: none;
+  @include tablet {
+    margin: -15px;
+  }
+
+  @extend %flex-wrapp;
+
+  &__item {
+    width: 100%;
+    &:not(:last-child) {
+      @include tablet-max {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include tablet {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @include desktop {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    @include tablet{
+      text-align: left;
+    }
+  }
+
+  &__text {
+    color: var(--text-tell-color);
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.features-box {
+  @extend %flex-align;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--bakground-secondary-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

@@ -1,0 +1,133 @@
+.second-section {
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-right: 93px;
+  }
+}
+.title-footer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--background-maintittle-color);
+  font-weight: 700;
+  padding-top: 12px;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  &__items {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: color 250ms var(--timing-functian),
+      background-color 250ms var(--timing-functian);
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+      color: var(--background-maintittle-color);
+      background-color: var(--accent-color);
+    }
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-maintittle-color);
+  }
+  &__icons {
+    fill: currentColor;
+  }
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: unset;
+  }
+
+  &__box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 14px;
+    background-color: #2f303a;
+    transition: border 250ms var(--timing-functian);
+    cursor: pointer;
+    color: var(--background-maintittle-color);
+    margin-bottom: 20px;
+    @include tablet {
+      width: 450px;
+    }
+    @include desktop {
+      width: 350px;
+      margin-right: 12px;
+    }
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.footer-form-btn {
+  width: 200px;
+  height: 50px;
+  transition: background-color 250ms var(--timing-functian),
+    box-shadow 250ms var(--timing-functian);
+  color: var(--background-maintittle-color);
+  background-color: #2196f3;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  display: flex;
+  @extend %flex-align;
+  justify-content: center;
+  margin: auto;
+  @include desktop {
+    margin: 0;
+  }
+
+  &__signature {
+    margin-right: 12px;
+  }
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &__icons {
+    fill: var(--background-maintittle-color);
+    width: 24px;
+    height: 24px;
+  }
+}

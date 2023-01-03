@@ -1,0 +1,47 @@
+.padding-none {
+  padding-bottom: 94px;
+  @include desktop-max {
+    padding-bottom: 0;
+  }
+}
+.box-overlay {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    @extend %flex-align;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--background-maintittle-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.portfolio-list {
+ display: flex;
+
+  @include desktop-max {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: var(--primary-margine-right);
+    margin-left: auto;
+    width: 390px;
+    height: 390px;
+  }
+}
+
+.portfolio-title {
+  @include desktop-max {
+    display: none;
+  }
+}

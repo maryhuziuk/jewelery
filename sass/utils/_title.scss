@@ -1,0 +1,20 @@
+.title {
+  margin-bottom: 40px;
+  font-family: 'Playfair Display';
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.16;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.00em;
+
+
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px ;
+  }
+}
+.italic{
+  font-style: italic;
+}

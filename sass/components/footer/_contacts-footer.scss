@@ -1,0 +1,41 @@
+.first-section {
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-right: 165px;
+  }
+
+  @include desktop {
+    margin-right: 94px;
+  }
+}
+
+.address {
+  color: var(--background-maintittle-color);
+  font-style: normal;
+  font-size: 14px;
+  margin-bottom: 9px;
+  line-height: 1.71;
+  text-align: center;
+}
+.contact-footer {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+
+  @include desktop-max {
+    justify-content: center;
+  }
+
+  transition: color 250ms var(--timing-functian);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contact-footer__mail {
+  margin-bottom: 9px;
+}
