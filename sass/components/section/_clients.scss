@@ -1,5 +1,6 @@
-.clients {
+.instagram {
   display: flex;
+ 
   
   @include desktop-max {
     flex-wrap: wrap;
@@ -15,10 +16,9 @@
 
   &__items {
     width: 100%;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-functian);
+    height: 100%;
+
+   
     @include tel-max{
       &:not(:last-child) {
           margin-bottom: 30px;
@@ -42,25 +42,20 @@
       width: calc((100% - 4 * 30px) / 1);
       margin: 15px;
     }
-    &:hover,
-    &:focus {
-      border: 1px solid var(--accent-color);
-    }
+  
   }
-  &__link {
-    width: 100%;
-    height: 100%;
-    @extend %flex-align;
-    justify-content: center;
-    color: #afb1b8;
-    transition: color 250ms var(--timing-functian);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
-  &__icons {
-    fill: currentColor;
-  }
+}
+.instagram-name{
+
+  font-weight: 400;
+  font-size: 20px;
+  color: #53575C;
+  text-decoration-line: underline;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.title-nopading{
+  margin-bottom: 20px;
 }

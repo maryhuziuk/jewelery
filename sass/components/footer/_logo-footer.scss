@@ -1,11 +1,12 @@
 .footer-logo {
   margin-bottom: 28px;
-  color: var(--background-maintittle-color);
-  font-family: Raleway, sans-serif;
+   color: #53575C;;
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
   display: flex;
+  width: 100px;
+  margin-right: 50px;
 
   @include desktop-max {
     font-size: 24px;

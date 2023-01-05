@@ -9,7 +9,7 @@
     width: 480px;
     height: auto;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
   }
   @include tablet {
     width: 768px;
@@ -22,9 +22,9 @@
   }
 }
 .footer {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  background-color: #EBE9E6;;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #EBE9E6;
   @include desktop{
     padding-bottom: 0;
   }

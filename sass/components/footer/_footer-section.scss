@@ -1,8 +1,9 @@
 .second-section {
+  
   margin-bottom: 60px;
 
   @include desktop {
-    margin-right: 93px;
+    margin-right: 120px;
   }
 }
 .title-footer {
@@ -13,9 +14,10 @@
   line-height: 1.14;
   text-align: left;
   text-transform: uppercase;
-  color: var(--background-maintittle-color);
+  color: var(--primary-text-tittle-color);
   font-weight: 700;
   padding-top: 12px;
+  
 
   @include desktop {
     display: block;
@@ -24,12 +26,12 @@
 
 .social-list {
   display: flex;
-  justify-content: center;
+ flex-direction: column;
 
   &__items {
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #EBE9E6;
     border-radius: 50%;
     transition: color 250ms var(--timing-functian),
       background-color 250ms var(--timing-functian);
@@ -38,8 +40,8 @@
     }
     &:hover,
     &:focus {
-      color: var(--background-maintittle-color);
-      background-color: var(--accent-color);
+      color:#53575C;
+      background-color: gold;
     }
   }
   &__link {
@@ -48,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--background-maintittle-color);
+    color:#53575C;
   }
   &__icons {
     fill: currentColor;
@@ -71,10 +73,10 @@
     border-radius: 4px;
     padding-left: 15px;
     font-size: 14px;
-    background-color: #2f303a;
+    background-color: #EBE9E6;
     transition: border 250ms var(--timing-functian);
     cursor: pointer;
-    color: var(--background-maintittle-color);
+    color: var(--primary-text-tittle-color);
     margin-bottom: 20px;
     @include tablet {
       width: 450px;
@@ -85,11 +87,11 @@
     }
 
     &:focus {
-      border: 1px solid var(--accent-color);
+      border: 1px solid gold;
       outline: none;
     }
     &::placeholder {
-      color: rgba(255, 255, 255, 0.6);
+      color: #53575C;
     }
   }
 }
@@ -99,7 +101,7 @@
   height: 50px;
   transition: background-color 250ms var(--timing-functian),
     box-shadow 250ms var(--timing-functian);
-  color: var(--background-maintittle-color);
+  color: var(--primary-text-tittle-color);
   background-color: #2196f3;
   cursor: pointer;
   border-radius: 4px;
